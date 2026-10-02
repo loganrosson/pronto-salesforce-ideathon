@@ -37,13 +37,13 @@ flowchart LR
 
 | Home page | Account Security page |
 |---|---|
-| ![Home](screenshots/01-site-home.png) | ![Account security](screenshots/02-account-security-page.png) |
+| ![Home](01-site-home.png) | ![Account security](02-account-security-page.png) |
 
 **No-login report form.** A customer who is locked out can still report. The form is a screen flow embedded on the site, and every submission creates a Case.
 
-![Report form](screenshots/03-no-login-report-form.png)
+![Report form](03-no-login-report-form.png)
 
-![What happens after you report](screenshots/04-report-process-timeline.png)
+![What happens after you report](04-report-process-timeline.png)
 
 ---
 
@@ -51,21 +51,21 @@ flowchart LR
 
 One Agent Router greets the customer and hands off to one of six subagents: **Account Security, Order Issues & Refunds, Storefront Search, Ambiguous Question, Escalation, Off Topic**.
 
-![Agentforce Builder](screenshots/05-agentforce-builder-subagents.png)
+![Agentforce Builder](05-agentforce-builder-subagents.png)
 
 | Order question (live chat on the site) | Hacked-account message |
 |---|---|
-| ![Order chat](screenshots/06-agent-order-question.png) | ![Hacked chat](screenshots/07-agent-hacked-account.png) |
+| ![Order chat](06-agent-order-question.png) | ![Hacked chat](07-agent-hacked-account.png) |
 
 The agent asks for the order email before sharing anything, never asks for a password, card number or code, and calls the **Agent: Escalate Account Takeover** flow to open a Critical case for Trust & Safety. Here is a case the agent created on its own (Origin = Agentforce, created by the agent user, refunds already frozen):
 
-![Case created by Agentforce](screenshots/26-case-created-by-agentforce.png)
+![Case created by Agentforce](26-case-created-by-agentforce.png)
 
 ---
 
 ## 3. Automation: 10 custom flows
 
-![Flows list](screenshots/09-custom-flows-list.png)
+![Flows list](09-custom-flows-list.png)
 
 | Flow | Type | What it does |
 |---|---|---|
@@ -84,35 +84,35 @@ The agent asks for the order email before sharing anything, never asks for a pas
 <summary><b>Flow canvases (click to expand)</b></summary>
 
 **Site: Report Account Takeover**
-![](screenshots/10-flow-site-report-account-takeover.png)
+![](10-flow-site-report-account-takeover.png)
 
 **Case: Route Account Security to Trust and Safety**
-![](screenshots/11-flow-route-to-trust-and-safety.png)
+![](11-flow-route-to-trust-and-safety.png)
 
 **Case: Set Critical for Unauthorized Orders**
-![](screenshots/12-flow-set-critical-unauthorized-orders.png)
+![](12-flow-set-critical-unauthorized-orders.png)
 
 **Case: Trust & Safety Acceptance Alerts** (overview and detail)
-![](screenshots/13-flow-acceptance-alerts-overview.png)
-![](screenshots/14-flow-acceptance-alerts-detail.png)
+![](13-flow-acceptance-alerts-overview.png)
+![](14-flow-acceptance-alerts-detail.png)
 
 **Case: Stamp Accepted At**
-![](screenshots/15-flow-stamp-accepted-at.png)
+![](15-flow-stamp-accepted-at.png)
 
 **Case: Sync Escalated Flag with Status**
-![](screenshots/16-flow-sync-escalated-flag.png)
+![](16-flow-sync-escalated-flag.png)
 
 **Case: Freeze Refunds on Account Security**
-![](screenshots/17-flow-freeze-refunds.png)
+![](17-flow-freeze-refunds.png)
 
 **Case: Secure Account**
-![](screenshots/18-flow-secure-account-screen.png)
+![](18-flow-secure-account-screen.png)
 
 **Agent: Escalate Account Takeover**
-![](screenshots/19-flow-agent-escalate-account-takeover.png)
+![](19-flow-agent-escalate-account-takeover.png)
 
 **Case: Email Report Confirmation**
-![](screenshots/20-flow-email-report-confirmation.png)
+![](20-flow-email-report-confirmation.png)
 
 </details>
 
@@ -122,12 +122,12 @@ The agent asks for the order email before sharing anything, never asks for a pas
 
 Custom Case fields we added: **Refund Amount at Risk, Refunds Frozen, Account Locked At, Minutes to Lockdown** (formula), **Security Notes, Accepted At, Minutes to Accept** (formula), **Not Accepted in 15 Min**, plus the Escalated flag.
 
-![Case record](screenshots/22-case-record-custom-fields.png)
-![Case status and web email](screenshots/23-case-record-status-and-web-email.png)
+![Case record](22-case-record-custom-fields.png)
+![Case status and web email](23-case-record-status-and-web-email.png)
 
 **Trust & Safety queue**, where every account-security case lands:
 
-![Queue](screenshots/25-trust-and-safety-queue.png)
+![Queue](25-trust-and-safety-queue.png)
 
 ---
 
@@ -135,9 +135,9 @@ Custom Case fields we added: **Refund Amount at Risk, Refunds Frozen, Account Lo
 
 Shows average minutes to accept, cases waiting now, acceptance-time buckets (within 15, 15 to 30, over 30 minutes), cases by reason and channel, refund dollars protected and minutes to lockdown.
 
-![Dashboard](screenshots/21-dashboard-trust-and-safety.png)
+![Dashboard](21-dashboard-trust-and-safety.png)
 
-![Acceptance time buckets report](screenshots/24-report-acceptance-time-buckets.png)
+![Acceptance time buckets report](24-report-acceptance-time-buckets.png)
 
 *Note: all cases are test data created by our team. Two cases labeled "SAMPLE DATA" had their accept times edited so the 15-to-30 and over-30-minute buckets show up on the chart.*
 
