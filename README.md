@@ -13,6 +13,13 @@ We built three connected pieces in a Salesforce Developer org:
 
 > The Developer org this ran in is being retired, so this repo keeps a record of what we built through screenshots taken from the live org on October 2, 2026.
 
+## Presentation
+
+We presented Pronto to a panel of judges in a 15-minute live session at the IDEAthon on October 2, 2026, including a live demo of the agent finding a customer by email.
+
+- **[View the slides in your browser](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Floganrosson%2Fpronto-salesforce-ideathon%2Fmain%2Fpresentation%2FPronto_IDEAthon_Deck.pptx)** (11 slides, opens in PowerPoint for the web, no download needed)
+- [Download the PowerPoint](presentation/Pronto_IDEAthon_Deck.pptx) (includes our speaker notes)
+
 ---
 
 ## How it works
